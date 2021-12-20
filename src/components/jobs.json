@@ -1,0 +1,26 @@
+[
+    {
+        "jobrole": "Backend Developer",
+        "time": "2021-08-01",
+        "jobtype": "Full Time",
+        "salary": "20 - 30 LPA",
+        "location": "Bangalore",
+        "applicants": "10"
+    },
+    {
+        "jobrole": "UI Designer",
+        "time": "2021-08-01",
+        "jobtype": "Internship",
+        "salary": "20 - 30 LPA",
+        "location": "Pune",
+        "applicants": "3000"
+    },
+    {
+        "jobrole": "Software Engineer",
+        "time": "2021-08-01",
+        "jobtype": "Full Time",
+        "salary": "20 - 30 LPA",
+        "location": "Delhi",
+        "applicants": "203"
+    }
+]

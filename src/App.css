@@ -1,38 +1,449 @@
 .App {
   text-align: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  color: #473F44;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.01em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #FFFFFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  color: #FFFFFF;
+  font-weight: 550 !important;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-weight: 600 !important;
+}
+
+h4 {
+  color: #1D2A64;
+  font-weight: 600 !important;
+  text-align: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F0F0F0;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1D2A64;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1D2A64;
+}
+
+.signup-page {
+  background-color: #1D2A64;
+  height: 100%;
+  width: 100%;
+  background-image: url("./assets/bg_balls.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left center;
+}
+
+.login-page {
+  background-color: #1D2A64;
+  height: 100%;
+  width: 100%;
+  background-image: url("./assets/bg_balls.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center left;
+}
+
+.cardcircle {
+  border-radius: 50%;
+  height: 185px;
+  background-color: white;
+  display: inline-block;
+  padding-top: 50px;
+  width: 185px;
+  /* z-index: 9999; */
+  margin-right: 5%
+}
+
+.signup-card {
+  background-color: #FFFFFF;
+  /* height: 450px; */
+  margin-left: 10%;
+  width: 80%;
+  padding: 50px;
+  padding-top: 70px;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 10px;
+  box-shadow: 0px 7px 15px rgba(89, 89, 89, 0.25);
+  text-align: start;
+  margin-top: -100px;
+  min-height: 500px;
+  z-index: 9;
+}
+
+.login-card {
+  background-color: #FFFFFF;
+  /* height: 450px; */
+  margin-left: 10%;
+  width: 80%;
+  padding: 50px;
+  padding-top: 70px;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 10px;
+  box-shadow: 0px 7px 15px rgba(89, 89, 89, 0.25);
+  text-align: start;
+  margin-top: -100px;
+  min-height: 350px;
+  z-index: 9;
+}
+
+.form-label {
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 2px;
+}
+
+.form-control {
+  border: 1px solid #DCDCDC !important;
+  padding: 12px !important;
+  padding-left: 15px !important;
+  border-radius: 7px !important;
+  z-index: 9999 !important;
+}
+
+input::placeholder {
+  color: #DCDCDC;
+}
+
+.loginbtn {
+  width: 100%;
+  padding: 10px !important;
+  border-radius: 12px !important;
+  background-color: #77CC66 !important;
+  font-weight: 600 !important;
+  border: #77CC66 !important;
+}
+
+.forgot-password {
+  color: #1D2A64;
+}
+
+.login-link {
+  color: #1D2A64;
+}
+
+.navbar {
+  background-color: #FFFFFF !important;
+}
+
+.navoptions {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.compverifyPage {
+  background-color: #F9F9F9;
+  height: 100%;
+}
+
+.stepNo {
+  color: #BFBFBF;
+  background-color: #EEEEEE;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 6px;
+}
+
+.selectedstep {
+  background-color: #1D2A64;
+  color: #FFFFFF;
+}
+
+hr {
+  border: 1px solid #DCDCDC;
+}
+
+.appbutton {
+  background-color: #1D2A64 !important;
+  color: #FFFFFF !important;
+  border-radius: 8px !important;
+  padding: 15px 35px !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  border: #1D2A64 !important;
+}
+
+.transparentbutton {
+  background-color: #FFFFFF !important;
+  color: #1D2A64 !important;
+  border-radius: 8px !important;
+  padding: 15px 35px !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  border: #FFFFFF !important;
+}
+
+.backbutton {
+  background-color: #F9F9F9 !important;
+  color: #1D2A64 !important;
+  border-radius: 8px !important;
+  padding: 15px 35px !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  border: #F9F9F9 !important;
+}
+
+.refreshbutton {
+  background-color: #FFFFFF !important;
+  color: #1D2A64 !important;
+  border-radius: 8px !important;
+  padding: 15px 0px !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  border: #FFFFFF !important;
+}
+
+.appcards {
+  box-shadow: 0px 7px 20px rgba(183, 183, 183, 0.18);
+  border-radius: 5px;
+  padding: 50px;
+  background-color: #FFFFFF;
+  width: 100%;
+  /* max-width: 650px; */
+}
+
+.dashboardpage {
+  background-color: #F9F9F9;
+  height: 100%;
+}
+
+.hirecard {
+  background-image: url("./assets/hirebanner.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  padding-left: 69px;
+  text-align: start;
+}
+
+.nojobs {
+  /* margin: 15px; */
+  padding: 30px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hirecard-header {
+  text-align: start;
+  padding-top: 50px;
+}
+
+.hiredemployees {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0px 7px 20px rgba(183, 183, 183, 0.18);
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  min-height: 70vh;
+  max-width: 90%;
+}
+
+.card-job {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0px 7px 20px rgba(183, 183, 183, 0.18);
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.comp-logo {
+  flex: 1;
+}
+
+.comp-name {
+  color: #473F44;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+.job-role {
+  color: #1D2A64;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 2px;
+}
+
+.stophirebutton {
+  background-color: #F0F0F0 !important;
+  color: #1D2A64 !important;
+  border-radius: 20px !important;
+  padding: 10px 25px !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  border: #F0F0F0 !important;
+}
+
+.stophirebutton:hover {
+  background-color: #dadada !important;
+}
+
+.cardcand {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0px 7px 20px rgba(183, 183, 183, 0.18);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.starredcardcand {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0px 7px 20px rgba(183, 183, 183, 0.18);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cardcand-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.appprofile-name {
+  color: #473F44;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.appprofile-location {
+  color: #1D2A64;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.appprofile-buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.profile-small-card {
+  background-color: #ffffff;
+  box-shadow: 0px 7px 20px rgba(183, 183, 183, 0.18);
+  border-radius: 5px;
+  padding: 35px 50px;
+  margin-top: 20px;
+  /* padding-top: 50px; */
+  color: #473F44;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-dialog {
+  width: 75% !important;
+  max-width: 90% !important;
+  border-radius: 16px !important;
+  height: 90% !important;
+}
+
+.modal-content {
+  border-radius: 16px !important;
+}
+
+.form-check-input:checked {
+  background-color: #1D2A64 !important;
+  border-color: #1D2A64 !important;
+  color: #FFFFFF !important;
+}
+
+.dropdown-toggle {
+  width: 100% !important;
+  height: 50px;
+  border-color: #1D2A64 !important;
+}
+
+.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgb(29 42 100 / 50%) !important;
+}
+
+.starred-candidate-card {
+  background: #FFFFFF;
+  box-shadow: 0px 7px 20px rgba(183, 183, 183, 0.18);
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+}
+
+.company-left-bar {
+  height: 100%;
+  box-shadow: 0px 7px 20px rgba(183, 183, 183, 0.18);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.company-left-bar-content{
+  background: #F8F8F8;
+  border-radius: 5px;
+  /* padding-left: 20px; */
+  padding-top: 30px;
+  padding: 25px;
+  text-align: start;
+}
+
+.company-edit{
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 12px 14px;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.18);
+  float: right;
+}
+
+.settings-option{
+  color: #1D2A64;
+  font-weight: 600;
+  /* width: 100%; */
+  text-align: start;
+  padding: 30px 10px;
+  margin: 10px 35px 10px 35px;
+  border-bottom: 1px solid #EEEEEE;
 }
